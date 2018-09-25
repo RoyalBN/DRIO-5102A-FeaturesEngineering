@@ -4,7 +4,7 @@ function [r] = evalBVF(nv)
 % Load Image Set 
 rootFolder='/tmp/101_ObjectCategories'
 
-categories = {'garfield', 'buddha', 'cougar_body','brontosaurus','accordion','airplanes','bass','beaver','cannon','car_side','chair','cellphone','crab','cup','dolphin','electric_guitar'};
+categories = {'garfield', 'buddha', 'cougar_body','brontosaurus','accordion','airplanes','bass','beaver','cannon','car_side','chair','cellphone','crab','cup','dolphin','electric_guitar','ibis','kangaroo','ketch','lamp','laptop','llama','lotus','mandolin','mayfly','nautilus','okapi','pagoda','revolver','rhino','rooster','snoopy'};
 imds = imageDatastore(fullfile(rootFolder, categories), 'LabelSource', 'foldernames')
 
 tbl = countEachLabel(imds)
