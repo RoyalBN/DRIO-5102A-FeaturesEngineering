@@ -4,8 +4,8 @@ function [r] = evalBVF(nv)
 % Load Image Set 
 rootFolder='/tmp/101_ObjectCategories'
 
-categories = {'garfield', 'buddha', 'cougar_body', 'brontosaurus'};
-imds = imageDatastore(fullfile(rootFolder, categories), 'LabelSource', 'foldernames');
+categories = {'garfield', 'buddha', 'cougar_body','brontosaurus','accordion','airplanes','bass','beaver','cannon','car_side','chair','cellphone','crab','cup','dolphin','electric_guitar'};
+imds = imageDatastore(fullfile(rootFolder, categories), 'LabelSource', 'foldernames')
 
 tbl = countEachLabel(imds)
 
@@ -72,26 +72,3 @@ categoryClassifier.Labels(labelIdx)
 
 
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
